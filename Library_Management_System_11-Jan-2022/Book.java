@@ -42,7 +42,7 @@ public class Book implements Comparable<Book>, Comparator<Book> {
         Main.books.add(
                 new Book(bookName, authorName, iSBNno, quantity, quantity, Main.admins.get(ind).name, priceofBook));
         System.out.printf("Book %s has been Successfully Added\n", bookName);
-        System.out.println("Enter 1 to add one another book else any other key for returing to to Admin page");
+        System.out.println("Enter 1 to add one another book else any other key for returning to to Admin page");
         int n = Integer.parseInt(Main.sc.nextLine());
         if (n == 1) {
             addBook(ind);
